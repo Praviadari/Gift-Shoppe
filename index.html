@@ -29,9 +29,13 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <div id="login"></div>
+          <li><a href="login-form/public/login.html"><i class="fal fa-user"></i></a></li>
+          <li><a  href="/wishlist.html"><i class="fal fa-heart"></i></a></li>
           <li id="lg-bag">
             <a href="cart.html"><i class="fal fa-shopping-bag"></i></a>
           </li>
+          
           <a href="#" id="close"><i class="far fa-times"></i></a>
         </ul>
       </div>
@@ -190,7 +194,7 @@
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
-          <img src="img/Products/f8.jpeg" alt="" />
+          <img src="img/Products/f8.jpg" alt="" />
           <div class="des">
             <span>Gift Shoppe</span>
             <h5>Family Tree Photo Frame</h5>
@@ -254,7 +258,7 @@
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
-          <img src="img/Products/n4.jpeg" alt="" />
+          <img src="img/Products/n4.jpg" alt="" />
           <div class="des">
             <span>Gift Shoppe</span>
             <h5>Creative Photo Frame</h5>
@@ -270,7 +274,7 @@
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
-          <img src="img/Products/n5.jpeg" alt="" />
+          <img src="img/Products/n5.jpg" alt="" />
           <div class="des">
             <span>Gift Shoppe</span>
             <h5>Creative Name Card</h5>
@@ -286,10 +290,10 @@
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
-          <img src="img/Products/n6.jpeg" alt="" />
+          <img src="img/Products/n6.jpg" alt="" />
           <div class="des">
             <span>Gift Shoppe</span>
-            <h5>Calender Photo Frame</h5>
+            <h5>Creative Heart Photo Frame</h5>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -696,6 +700,13 @@
         <p>©2023, Gift Shoppe</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="App.js"></script>
+    <script type="text/babel">
+      ReactDOM.render(<APP/>,document.querySelector(".login"));
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

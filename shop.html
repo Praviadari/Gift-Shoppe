@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gift Shoppe</title>
+    <title>Shop-Gift Shoppe</title>
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -29,6 +29,9 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <div id="login"></div>
+          <li><a href="login-form/public/login.html"><i class="fal fa-user"></i></a></li>
+          <li><a  href="/wishlist.html"><i class="fal fa-heart"></i></a></li>
           <li id="lg-bag">
             <a href="cart.html"><i class="fal fa-shopping-bag"></i></a>
           </li>
@@ -45,7 +48,126 @@
       <h2>Customised Gifts</h2>
       <p>Save More With Coupons & up to 50% Off!</p>
     </section>
-
+    <section class="container">
+      <form >
+        <i class="fas fa-search"></i>
+        <input type="text" id="search-item" placeholder="Search Products" onkeyup="search()">
+      </form>
+      <div class="product-list" id="product-list">
+        <div class="product">
+          <img src="img/Products/f1.jpg" alt="">
+          <div class="p-details">
+            <h2>Infinity Photo Frame</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/f2.jpg" alt="">
+          <div class="p-details">
+            <h2>Heart Photo Frame</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/f3.jpg" alt="">
+          <div class="p-details">
+            <h2>Purse with Name</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/f4.jpg" alt="">
+          <div class="p-details">
+            <h2>Heart Name Frame</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/f5.jpg" alt="">
+          <div class="p-details">
+            <h2>3D Heart Frame</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/f6.jpg" alt="">
+          <div class="p-details">
+            <h2>3D Sphere Frame</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/f7.jpg" alt="">
+          <div class="p-details">
+            <h2>3D Photo Frame</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/f8.jpg" alt="">
+          <div class="p-details">
+            <h2>Family Tree Photo Frame</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/n1.jpg" alt="">
+          <div class="p-details">
+            <h2>Clock</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/n2.jpg" alt="">
+          <div class="p-details">
+            <h2>Couple's Photo Frame</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/n3.jpg" alt="">
+          <div class="p-details">
+            <h2>Family Photo Frame</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/n4.jpg" alt="">
+          <div class="p-details">
+            <h2>Creative Photo Frame</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/n5.jpg" alt="">
+          <div class="p-details">
+            <h2>Creative Name Card</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/n6.jpg" alt="">
+          <div class="p-details">
+            <h2>Calender Photo Frame</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/n7.jpg" alt="">
+          <div class="p-details">
+            <h2>Laser Engraved Photo</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Products/n8.jpg" alt="">
+          <div class="p-details">
+            <h2>Creative Photo Frame</h2>
+            <h3>₹500</h3>
+          </div>
+        </div>                
+      </div>
+    </section>
     <section id="product1" class="section-p1">
       <h2>Featured Gifts</h2>
       <div class="pro-container">
@@ -162,7 +284,7 @@
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
-          <img src="img/Products/f8.jpeg" alt="" />
+          <img src="img/Products/f8.jpg" alt="" />
           <div class="des">
             <span>Gift Shoppe</span>
             <h5>Family Tree Photo Frame</h5>
@@ -226,7 +348,7 @@
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
-          <img src="img/Products/n4.jpeg" alt="" />
+          <img src="img/Products/n4.jpg" alt="" />
           <div class="des">
             <span>Gift Shoppe</span>
             <h5>Creative Photo Frame</h5>
@@ -242,7 +364,7 @@
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
-          <img src="img/Products/n5.jpeg" alt="" />
+          <img src="img/Products/n5.jpg" alt="" />
           <div class="des">
             <span>Gift Shoppe</span>
             <h5>Creative Name Card</h5>
@@ -258,7 +380,7 @@
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
-          <img src="img/Products/n6.jpeg" alt="" />
+          <img src="img/Products/n6.jpg" alt="" />
           <div class="des">
             <span>Gift Shoppe</span>
             <h5>Calender Photo Frame</h5>
