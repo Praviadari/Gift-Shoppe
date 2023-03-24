@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register-Gift Shoppe</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/img/favicon/android-chrome-192x192.png"
+    />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    
+
+</head>
+<body>
+    <section id="header">
+        <a href="#"
+          ><img src="/img\logo.jpg" class="logo" alt="" width="80" height="80" />
+        </a>
+        <div>
+          <ul id="navbar">
+            <li><a  href="/index.html">Home</a></li>
+            <li>
+              <a href="/shop.html"><i class="fa-solid fa-shop">Shop</i></a>
+            </li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <div id="login"></div>
+            <li><a class="active" href="/login-form/public/login.html"><i class="fal fa-user"></i></a></li>
+            <li><a class="wishlist" href="/wishlist.html"><i class="fal fa-heart"></i></a></li>
+            <li id="lg-bag">
+              <a href="/cart.html"><i class="fal fa-shopping-bag"></i></a>
+            </li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+          </ul>
+        </div>
+        <div id="mobile">
+          <a href="cart.html"><i class="fal fa-shopping-bag"></i></a>
+          <i id="bar" class="fas fa-outdent"></i>
+        </div>
+      </section>
+    <div class="alert-box">
+        <p class="alert"></p>
+    </div>
+
+    <div class="form">
+        <h1 class="heading">Register</h1>
+        <input type="text" placeholder="name" autocomplete="off" class="name" required>
+        <input type="email" placeholder="email" autocomplete="off" class="email" required>
+        <input type="password" placeholder="password" autocomplete="off" class="password" required>
+        <button class="submit-btn">register</button>
+        <a href="/login-form/public/login.html" class="link">already have an account ? log in here</a>
+    </div>
+
+    <script src="js/form.js"></script>
+    
+</body>
+</html>
