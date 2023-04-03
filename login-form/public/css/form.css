@@ -15,8 +15,12 @@
   font-family: "Spartan", sans-serif;
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 /* Global Styles */
@@ -208,7 +212,7 @@ header li > a{
     display: none;
 }
 #hero {
-    background-image: url(/img/hero4.png);
+    background-image: url( /public/img/hero4.png);
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -227,7 +231,7 @@ header li > a{
     color: #088178;
 }
 #hero button {
-    background-image: url(/img/button.png);
+    background-image: url(/public/img/button.png);
     background-color: transparent;
     color: #088178;
     border: 0;
@@ -309,7 +313,9 @@ header li > a{
 }
 #product1 .pro img {
     width: 100%;
+    height: 60%;
     border-radius: 20px;
+    margin-bottom: 0.5rem;
 }
 #product1 .pro .des {
     text-align: start;
@@ -323,6 +329,9 @@ header li > a{
     padding-top: 7px;
     color: #1a1a1a;
     font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
 }
 #product1 .pro .des i {
     font-size: 12px;
@@ -353,7 +362,7 @@ header li > a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("/img/Banner/b2.jpg");
+    background-image: url("/public/img/Banner/b2.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -385,7 +394,7 @@ header li > a{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("/img/Banner/b17.jpg");
+    background-image: url("/public/img/Banner/b17.jpg");
     min-width: 580px;
     height: 50vh;
     background-size: cover;
@@ -397,7 +406,7 @@ header li > a{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("/img/Banner/b10.jpg");
+    background-image: url("/public/img/Banner/b10.jpg");
     min-width: 580px;
     height: 50vh;
     background-size: cover;
@@ -435,7 +444,7 @@ header li > a{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("/img/Banner/b7.jpg");
+    background-image: url("/public/img/Banner/b7.jpg");
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -448,7 +457,7 @@ header li > a{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("/img/Banner/b4.jpg");
+    background-image: url("/public/img/Banner/b4.jpg");
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -461,7 +470,7 @@ header li > a{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("/img/Banner/b18.jpg");
+    background-image: url("/public/img/Banner/b18.jpg");
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -484,7 +493,7 @@ header li > a{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url("/img/Banner/b14.png");
+    background-image: url("/public/img/Banner/b14.png");
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041e42;
@@ -511,11 +520,12 @@ header li > a{
     padding: 0 1.25rem;
     font-size: 14px;
     width: 100%;
-    border: 1px solid transparent;
+    border: 1px solid black ;
     border-radius: 4px;
     outline: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    color: white;
 }
 #newsletter button {
     background-color: #088178;
@@ -577,7 +587,7 @@ footer .copyright {
     text-align: center;
 }
 #page-header {
-    background-image: url("/img/Banner/b1.jpg");
+    background-image: url("/public/img/Banner/b1.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -669,7 +679,7 @@ footer .copyright {
 }
   
 #page-header.blog-header {
-    background-image: url("/img/Banner/b19.jpg");
+    background-image: url("/public/img/Banner/b19.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -736,7 +746,7 @@ z-index: -9;
 }
 
 #page-header.about-header {
-background-image: url("/img/about/banner.png");
+background-image: url("/public/img/about/banner.png");
 }
 #about-head{
 display: flex;
@@ -763,7 +773,7 @@ height: 100%;
 border-radius: 20px;
 }
 #page-header.contact-header {
-background-image: url("/img/about/banner.png");
+background-image: url("/public/img/about/banner.png");
 }
 #contact-details{
 display: flex;
@@ -856,7 +866,7 @@ font-weight: 600;
 color:#000 ;
 }
 #page-header.cart-header {
-background-image: url("/img/about/banner.png");
+background-image: url("/public/img/about/banner.png");
 }
 #cart{
 overflow-x: auto;

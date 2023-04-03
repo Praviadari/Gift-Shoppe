@@ -11,28 +11,56 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="/img/favicon/android-chrome-192x192.png"
+      href="./img/favicon/android-chrome-192x192.png"
     />
-    <link rel="stylesheet" href="/css/form.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <link rel="stylesheet" href=" ./css/form.css" />
   </head>
   <body>
-    <header id="header-top" >
-      <div class="header-top">
-        <div class="container">
-          <div class="wrapper flexitem">
-            <div class="left">
-              <ul class="flexitem main-links">
-                <li><a href="#">+91 99667 37466</a></li>
-                <li><a href="">Giftshoppe711@gmail.com</a></li>
-                <li><a href="">My Orders</a></li>
-                <li><a href="">Track your Order</a></li>
-                <li><a href="">Welcome</a></li>
-              </ul> 
-            </div>
-            <div class="right">
-              <ul>
-                <li class="flexitem main-links">
-                  <li><a href="#">ID₹ <span class="icon-small"><i class="fas fa-chevron-down"></i></span></a>
+    <div class="flex justify-end h-auto py-0 bg-[#e3e6f3] grid-cols-2 divide-x shadow-xl shadow-black opacity-100">
+      <ul class="flex items-center  grid-cols-2 divide-x">
+        <li>
+          <a
+            href=""
+            class="text-sm text-sky-700  hover:underline decoration-2  px-2 py-1 rounded-md hover:text-[#088178] font-semibold"
+            >My Orders</a>
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-sm text-sky-700 hover:underline decoration-2 px-2 py-1 rounded-md  hover:text-[#088178] font-semibold"
+            >Track your Order</a
+          >
+        </li>
+        <li>
+          <p class="cursor-pointer    hover:text-[#088178] font-semibold">
+            <span class="material-icons"> account_circle </span>
+          </p>
+          <ul id="opne-dropdown" class="hidden">
+            <li>
+              <a href="#" class="text-sm text-sky-700">+91 99667 37466</a>
+            </li>
+            <li>
+              <a href="" class="text-sm text-sky-700"
+                >Giftshoppe711@gmail.com</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="flex">
+        <li class="">
+          <!-- <li>
+                    <a href="#">ID₹ <span class="icon-small"><i class="fas fa-chevron-down"></i></span></a>
                     <ul>
                       <li class="current"><a href="#">IDR</a></li>
                       <li><a href="#">USD</a></li>
@@ -47,24 +75,15 @@
                       <li><a href="#">Hindi</a></li>
                       <li><a href="#">Tamil</a></li>
                     </ul>
-                  </li>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="https://www.instagram.com/giftshoppe2021/?igshid=ZDdkNTZiNTM%3D"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+                  </li> -->
+        </li>
+      </ul>
+    </div>
     <section id="header">
       <a href="#"
         ><img src="img\logo.jpg" class="logo" alt="" width="80" height="80" />
       </a>
-      
+
       <div>
         <ul id="navbar">
           <li><a class="active" href="index.html">Home</a></li>
@@ -75,8 +94,14 @@
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <div id="login"></div>
-          <li><a href="/login.html"><i class="fal fa-user"></i></a></li>
-          <li><a  href="/wishlist.html"><i class="fal fa-heart"></i></a></li>
+          <li>
+            <a href="/public/login.html"
+              ><i class="fal fa-user"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/wishlist.html"><i class="fal fa-heart"></i></a>
+          </li>
           <li id="lg-bag">
             <a href="cart.html"><i class="fal fa-shopping-bag"></i></a>
           </li>
@@ -93,12 +118,11 @@
         <a href="cart.html"><i class="fal fa-shopping-bag"></i></a>
         <i id="bar" class="fas fa-outdent"></i>
       </div>
-      
     </section>
 
     <section id="hero">
-      <h2>Customised Gifts</h2>
-      <h4>Lesser Prices Than Market</h4>
+      <h2 class="text-4xl">Customised Gifts</h2>
+      <h4 class="text-base">Lesser Prices Than Market</h4>
       <button>Shop Now</button>
     </section>
 
@@ -129,7 +153,7 @@
       </div>
     </section>
     <section id="product1" class="section-p1">
-      <h2>Featured Gifts</h2>
+      <h2 class="text-4xl">Featured Gifts</h2>
       <p>Birthday to Anniversery Gifts</p>
       <div class="pro-container">
         <div class="pro">
@@ -392,11 +416,11 @@
     </section>
     <section id="banner" class="section-m1">
       <h4>Special Offer</h4>
-      <h2>Up to <span>50% off</span> for 1st Customers</h2>
+      <h2 class="text-4xl">Up to <span>50% off</span> for 1st Customers</h2>
       <button class="normal">Explore More</button>
     </section>
     <section id="product1" class="section-p1">
-      <h2>Shop By Item</h2>
+      <h2 class="text-4xl" >Shop By Item</h2>
       <p>Birthday to Anniversery Gifts</p>
       <div class="pro-container">
         <div class="pro">
@@ -715,7 +739,10 @@
           <div class="icon">
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-twitter"></i>
-            <a href="https://www.instagram.com/giftshoppe2021/?igshid=ZDdkNTZiNTM%3D"><i class="fab fa-instagram"></i></a>
+            <a
+              href="https://www.instagram.com/giftshoppe2021/?igshid=ZDdkNTZiNTM%3D"
+              ><i class="fab fa-instagram"></i
+            ></a>
             <i class="fab fa-pinterest"></i>
             <i class="fab fa-youtube"></i>
           </div>
@@ -751,12 +778,18 @@
         <p>©2023, Gift Shoppe</p>
       </div>
     </footer>
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel" src="App.js"></script>
     <script type="text/babel">
-      ReactDOM.render(<APP/>,document.querySelector(".login"));
+      ReactDOM.render(<APP />, document.querySelector(".login"));
     </script>
     <script src="script.js"></script>
   </body>

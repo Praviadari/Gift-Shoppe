@@ -11,13 +11,75 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="/img/favicon/android-chrome-192x192.png"
+      href="/public/img/favicon/android-chrome-192x192.png"
     />
-    <link rel="stylesheet" href="/css/form.css"  />
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="./css/form.css"  />
   </head>
   <body>
+    <div class="flex justify-end h-auto py-0 bg-[#e3e6f3] grid-cols-2 divide-x shadow-xl shadow-black opacity-100">
+      <ul class="flex items-center  grid-cols-2 divide-x">
+        <li>
+          <a
+            href=""
+            class="text-sm text-sky-700  hover:underline decoration-2  px-2 py-1 rounded-md hover:text-[#088178] font-semibold"
+            >My Orders</a>
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-sm text-sky-700 hover:underline decoration-2 px-2 py-1 rounded-md  hover:text-[#088178] font-semibold"
+            >Track your Order</a
+          >
+        </li>
+        <li>
+          <p class="cursor-pointer    hover:text-[#088178] font-semibold">
+            <span class="material-icons"> account_circle </span>
+          </p>
+          <ul id="opne-dropdown" class="hidden">
+            <li>
+              <a href="#" class="text-sm text-sky-700">+91 99667 37466</a>
+            </li>
+            <li>
+              <a href="" class="text-sm text-sky-700"
+                >Giftshoppe711@gmail.com</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="flex">
+        <li class="">
+          <!-- <li>
+                    <a href="#">ID₹ <span class="icon-small"><i class="fas fa-chevron-down"></i></span></a>
+                    <ul>
+                      <li class="current"><a href="#">IDR</a></li>
+                      <li><a href="#">USD</a></li>
+                      <li><a href="#">EURO</a></li>
+                      <li><a href="#">GBP</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">English</a><span class="icon-small"><i class="fas fa-chevron-down"></i></span>
+                    <ul>
+                      <li class="current"><a href="#">English</a></li>
+                      <li><a href="#">Telugu</a></li>
+                      <li><a href="#">Hindi</a></li>
+                      <li><a href="#">Tamil</a></li>
+                    </ul>
+                  </li> -->
+        </li>
+      </ul>
+    </div>
     <section id="header">
-      <a href="#"
+      <a href="./index.html"
         ><img src="img\logo.jpg" class="logo" alt="" width="70" height="70" />
       </a>
       <div>
@@ -30,10 +92,10 @@
           <li><a  href="about.html">About</a></li>
           <li><a  href="contact.html">Contact</a></li>
           <div id="login"></div>
-          <li><a href="/login.html"><i class="fal fa-user"></i></a></li>
-          <li><a  href="/wishlist.html"><i class="fal fa-heart"></i></a></li>
+          <li><a href="register.html"><i class="fal fa-user"></i></a></li>
+          <li><a  href="./wishlist.html"><i class="fal fa-heart"></i></a></li>
           <li id="lg-bag">
-            <a class="active" href="cart.html"><i class="fal fa-shopping-bag"></i></a>
+            <a class="active" href="./cart.html"><i class="fal fa-shopping-bag"></i></a>
           </li>
           <li>
             <div class="icon-text">
@@ -45,7 +107,7 @@
         </ul>
       </div>
       <div id="mobile">
-        <a class="active" href="cart.html"><i class="fal fa-shopping-bag"></i></a>
+        <a class="active" href="./cart.html"><i class="fal fa-shopping-bag"></i></a>
         <i id="bar" class="fas fa-outdent"></i>
       </div>
     </section>

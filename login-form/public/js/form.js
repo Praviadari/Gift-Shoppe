@@ -76,3 +76,5 @@ const alertBox = (data) => {
         alertContainer.style.top = null;
     }, 5000);
 }
+
+let 
