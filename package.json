@@ -1,18 +1,11 @@
 {
-  "name": "loginform",
+  "name": "y",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express.js": "^1.0.0",
-    "knex": "^0.95.6",
-    "nodemon": "^2.0.7",
-    "pg": "^8.6.0"
-  }
+  "license": "ISC"
 }
