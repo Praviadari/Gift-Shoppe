@@ -1,3 +1,3 @@
-# Gift-Shoppe.github.io.
- Written in Html ,CSS, Javascript , React Js , Postgress.
- https://praviadari.github.io/Gift-Shoppe.github.io/
+# Backend Login Form
+
+Once you clone it make sure you run 'npm install' command to install all libraries mention in package.json file.
