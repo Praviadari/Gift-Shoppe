@@ -25,8 +25,8 @@
 
     <link rel="stylesheet" href=" /public/css/form.css" />
   </head>
-  <body>
-    <div class="flex justify-end h-auto py-0 bg-[#e3e6f3] grid-cols-2 divide-x shadow-xl shadow-black opacity-100">
+  <body class="relative bg-center bg-cover w-full font-sans  h-auto">
+    <div class="flex justify-end h-auto py-0 bg-[#e3e6f3] grid-cols-2 divide-x ">
       <ul class="flex items-center  grid-cols-2 divide-x">
         <li>
           <a
@@ -79,33 +79,39 @@
         </li>
       </ul>
     </div>
-    <section id="header">
+    <section id="header" class="flex bg-[#e3e6f3]  flex-row z-999 justify-between items-center">
       <a href="#"
         ><img src="img\logo.jpg" class="logo" alt="" width="80" height="80" />
       </a>
-
       <div>
-        <ul id="navbar">
-          <li><a class="active" href="index.html">Home</a></li>
+        <ul id="navbar" class="flex justify-center items-center">
+          <li class="relative px-5 py-0 list-none"><a class="active relative px-5 py-0 list-none"><a class="underline text-base font-semibold text-[#088178] ease-in  hover:text-[#088178] 
+            after:w-1/3 after:content-[''] after:h-2 after:text-[#088178] after:absolute after:left-20 after:bottom--4 hover:underline decoration-2" href="/index.html">Home</a></li>
           <li>
             <a href="shop.html"><i class="fa-solid fa-shop">Shop</i></a>
           </li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="relative px-5 py-0 list-none"><a class=" no-underline text-base font-semibold text-[#1a1a1a] ease-in  hover:text-[#088178] active:text-[#088178]
+            after:w-1/3 after:content-[''] after:h-2 after:text-[#088178] after:absolute after:left-20 after:bottom--4 hover:underline decoration-2" href="blog.html">Blog</a></li>
+          <li class="relative px-5 py-0 list-none"><a class=" no-underline text-base font-semibold text-[#1a1a1a] ease-in  hover:text-[#088178] active:text-[#088178]
+            after:w-1/3 after:content-[''] after:h-2 after:text-[#088178] after:absolute after:left-20 after:bottom--4 hover:underline decoration-2" href="about.html">About</a></li>
+          <li class="relative px-5 py-0 list-none"><a class=" no-underline text-base font-semibold text-[#1a1a1a] ease-in  hover:text-[#088178] active:text-[#088178]
+            after:w-1/3 after:content-[''] after:h-2 after:text-[#088178] after:absolute after:left-20 after:bottom--4 hover:underline decoration-2" href="contact.html">Contact</a></li>
           <div id="login"></div>
-          <li>
-            <a href="/public/login.html"
+          <li class="relative px-5 py-0 list-none">
+            <a  class=" no-underline text-base font-semibold text-[#1a1a1a] ease-in  hover:text-[#088178] active:text-[#088178]
+            after:w-1/3 after:content-[''] after:h-2 after:text-[#088178] after:absolute after:left-20 after:bottom--4 hover:underline decoration-2"href="/public/login.html"
               ><i class="fal fa-user"></i
             ></a>
           </li>
-          <li>
-            <a href="/wishlist.html"><i class="fal fa-heart"></i></a>
+          <li class="relative px-5 py-0 list-none">
+            <a  class=" no-underline text-base font-semibold text-[#1a1a1a] ease-in  hover:text-[#088178] active:text-[#088178]
+            after:w-1/3 after:content-[''] after:h-2 after:text-[#088178] after:absolute after:left-20 after:bottom--4 hover:underline decoration-2"href="/wishlist.html"><i class="fal fa-heart"></i></a>
           </li>
-          <li id="lg-bag">
-            <a href="cart.html"><i class="fal fa-shopping-bag"></i></a>
+          <li id="lg-bag" class="relative px-5 py-0 list-none">
+            <a class=" no-underline text-base font-semibold text-[#1a1a1a] ease-in  hover:text-[#088178] active:text-[#088178]
+            after:w-1/3 after:content-[''] after:h-2 after:text-[#088178] after:absolute after:left-20 after:bottom--4 hover:underline decoration-2" href="cart.html"><i class="fal fa-shopping-bag"></i></a>
           </li>
-          <li>
+          <li class="relative px-5 py-0 list-none">
             <div class="icon-text">
               <div class="mini-text">Total</div>
               <div class="cart-total">₹0.00</div>
@@ -169,7 +175,7 @@
               <i class="fas fa-star"></i>
             </div>
             <h4>₹500</h4>
-          </div>
+          </div class="cart-icon">
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
@@ -709,73 +715,74 @@
         <h3>Customise Yourself</h3>
       </div>
     </section>
-    <section id="newsletter" class="section-p1 section-m1">
+    
+    <section id="newsletter" class="section-p1 section-m1 flex flex-row flex-wrap justify-between  items-center bg-no-repeat bg-right-top px-10 py-10">
       <div class="newstext">
-        <h4>Sign Up for Newsletters</h4>
-        <p>
+        <h4 class="tex-22 font-semibold text-[#fff]">Sign Up for Newsletters</h4>
+        <p class="tex-14 font-semibold text-[#fff]">
           Get E-mail updates about our latest shop and
-          <span>Special Offers.</span>
+          <span  class="text-[#ffbd27]">Special Offers.</span>
         </p>
       </div>
-      <div class="form">
-        <input type="text" placeholder="Your Email Address" />
-        <button class="normal">Sign Up</button>
+      <div class="newsform flex flex-row ">
+        <input class="h-50 py-0 px-80 pl-80 ml-30 text-14 border-1 border-solid w-full text-black rounded border-black rounded-tr-0 rounded-br-0 opacity-1" type="text" placeholder="Your Email Address" />
+        <button class="normal text-bg-[#088178] text-[#fff] rounded-tl-bl-0 rounded-br-lg-0 whitespace-nowrap">Sign Up</button>
       </div>
     </section>
-    <footer class="section-p1">
-      <div class="col">
-        <img class="logo" src="img/logo.jpg" width="20%" height="25%" alt="" />
-        <h4>Contact</h4>
-        <p>
+    <footer class="section-p1 flex flex-wrap justify-between">
+      <div class="col flex flex-col items-start mb-20 justify-between">
+        <img class="logo mb-30" src="img/logo.jpg" width="20%" height="25%" alt="" />
+        <h4 class="text-xl pb-2 font-bold">Contact</h4>
+        <p class="text-base my-0 mt-0 mb-0 ">
           <strong>Address:</strong>Gift Shoppe <br />
           D.No:-9-86, Near Hanuman Temple, Main Road, Mangalapalem, Kothavalasa
           <br />
           Pincode:535183
         </p>
-        <p><strong>Phone:</strong>+91 9966737466</p>
-        <p><strong>Hours:</strong>9:00-18:00, Mon-Sun</p>
+        <p class="text-base my-0 mt-0 mb-0 "><strong>Phone:</strong>+91 9966737466</p>
+        <p class="text-base my-0 mt-0 mb-0 "><strong>Hours:</strong>9:00-18:00, Mon-Sun</p>
         <div class="follow">
-          <h4>Follow Us</h4>
-          <div class="icon">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
+          <h4 class="text-xl pb-2 font-bold">Follow Us</h4>
+          <div class="icon  py-0">
+            <i class="fab fa-facebook-f text-[#465b52] pr-4 cursor:pointer hover:text-[#4267B2]"></i>
+            <i class="fab fa-twitter text-[#465b52] pr-4 cursor:pointer hover:text-[#1DA1F2]"></i>
             <a
               href="https://www.instagram.com/giftshoppe2021/?igshid=ZDdkNTZiNTM%3D"
-              ><i class="fab fa-instagram"></i
+              ><i class="fab fa-instagram text-[#465b52] pr-4 cursor:pointer hover:text-[#1DA1F2]"></i
             ></a>
-            <i class="fab fa-pinterest"></i>
-            <i class="fab fa-youtube"></i>
+            <i class="fab fa-pinterest text-[#465b52] pr-4 cursor:pointer hover:text-[#1DA1F2]"></i>
+            <i class="fab fa-youtube text-[#465b52] pr-4 cursor:pointer hover:text-[#1DA1F2]"></i>
           </div>
         </div>
       </div>
-      <div class="col">
-        <h4>About</h4>
-        <a href="#">About Us</a>
-        <a href="#">Delivery Information</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Contact Us</a>
+      <div class="col flex text-xl flex-col items-start mb-20 py-0">
+        <h4 class="text-xl pb-2 font-bold">About</h4>
+        <a class="hover:text-[#088178] text-base py-0" href="#">About Us</a>
+        <a class="hover:text-[#088178] text-base py-0" href="#">Delivery Information</a>
+        <a class="hover:text-[#088178] text-base py-0" href="#">Privacy Policy</a>
+        <a class="hover:text-[#088178] text-base py-0" href="#">Terms & Conditions</a>
+        <a class="hover:text-[#088178] text-base py-0" href="#">Contact Us</a>
       </div>
-      <div class="col">
-        <h4>My Account</h4>
-        <a href="#">Sign In</a>
-        <a href="#">View Cart</a>
-        <a href="#">My Wishlist</a>
-        <a href="#">Track My Orders</a>
-        <a href="#">Help</a>
+      <div class="col flex text-xl flex-col items-start mb-20 py-0">
+        <h4 class="text-xl pb-2 font-bold">My Account</h4>
+        <a class="hover:text-[#088178] text-base py-0" href="#">Sign In</a>
+        <a class="hover:text-[#088178] text-base py-0" href="#">View Cart</a>
+        <a class="hover:text-[#088178] text-base py-0" href="#">My Wishlist</a>
+        <a class="hover:text-[#088178] text-base py-0" href="#">Track My Orders</a>
+        <a class="hover:text-[#088178] text-base py-0" href="#">Help</a>
       </div>
-      <div class="col install">
-        <h4>Install App</h4>
-        <p>From App Store or Google Play</p>
+      <div class="col install text-14 mb-20 flex flex-col items-start">
+        <h4 class="text-xl pb-0 font-bold">Install App</h4>
+        <p class="text-base my-0 mt-0 mb-0 ">From App Store or Google Play</p>
         <div class="row">
-          <img src="img/pay/app.jpg" alt="" />
-          <img src="img/pay/play.jpg" alt="" />
+          <img class="rounded-md border-[#088178] border-1 border-solid" src="img/pay/app.jpg" alt="" />
+          <img class="rounded-md border-[#088178] border-1 border-solid" src="img/pay/play.jpg" alt="" />
         </div>
         <p>Secured Payment Gateways</p>
-        <img src="img/pay/pay.png" alt="" />
+        <img class="mt-10 mb-0 ml-15 mr-0" src="img/pay/pay.png" alt="" />
       </div>
-      <div class="Copyright">
-        <p>©2023, Gift Shoppe</p>
+      <div  class="Copyright text-xl pb-2 text-center w-full">
+        <p class="text-base my-0 mt-0 mb-0 ">©2024, Gift Shoppe</p>
       </div>
     </footer>
     <script
@@ -791,6 +798,6 @@
     <script type="text/babel">
       ReactDOM.render(<APP />, document.querySelector(".login"));
     </script>
-    <script src="script.js"></script>
+    <script src="/public/js/form.js"></script>
   </body>
 </html>

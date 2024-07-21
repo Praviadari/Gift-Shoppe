@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact-Gift Shoppe</title>
+    <title>Cart-Gift Shoppe</title>
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -11,7 +11,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="./img/favicon/android-chrome-192x192.png"
+      href="/public/img/favicon/android-chrome-192x192.png"
     />
     <link
     href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -22,7 +22,7 @@
     rel="stylesheet"
   />
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <link rel="stylesheet" href="/public/css/form.css" />
+    <link rel="stylesheet" href="./css/form.css"  />
   </head>
   <body>
     <div class="flex justify-end h-auto py-0 bg-[#e3e6f3] grid-cols-2 divide-x shadow-xl shadow-black opacity-100">
@@ -90,12 +90,12 @@
           </li>
           <li><a href="blog.html">Blog</a></li>
           <li><a  href="about.html">About</a></li>
-          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a  href="contact.html">Contact</a></li>
           <div id="login"></div>
-          <li><a href="./login.html"><i class="fal fa-user"></i></a></li>
+          <li><a href="register.html"><i class="fal fa-user"></i></a></li>
           <li><a  href="./wishlist.html"><i class="fal fa-heart"></i></a></li>
           <li id="lg-bag">
-            <a href="./cart.html"><i class="fal fa-shopping-bag"></i></a>
+            <a class="active" href="./cart.html"><i class="fal fa-shopping-bag"></i></a>
           </li>
           <li>
             <div class="icon-text">
@@ -107,79 +107,80 @@
         </ul>
       </div>
       <div id="mobile">
-        <a href="./cart.html"><i class="fal fa-shopping-bag"></i></a>
+        <a class="active" href="./cart.html"><i class="fal fa-shopping-bag"></i></a>
         <i id="bar" class="fas fa-outdent"></i>
       </div>
     </section>
 
-    <section id="page-header" class="contact-header">
-      <h2>#Let's_Talk</h2>
-      <p>Leave a Message.We Love to Hear from You!!! </p>
+    <section id="page-header" class="cart-header">
+      <h2>#Cart</h2>
+      <p>Shop Again With Us!!! </p>
     </section>
-    <section id="contact-details" class="section-p1">
-      <div class="details">
-        <span>Get In Touch</span>
-        <h2>Visit our store Or Contact Us Today</h2>
-        <h3>Head Office</h3>
-        <div>
-          <li>
-            <i class="fal fa-map"></i>
-            <p>D.No:-9-86, Near Hanuman Temple, Main Road, Mangalapalem, Kothavalasa</p>
-          </li>
-          <li>
-            <i class="fal fa-envelope"></i>
-            <p>Giftshoppe711@gmail.com</p>
-          </li>
-          <li>
-            <i class="fal fa-phone-alt"></i>
-            <p>+91 9966737466</p>
-          </li>
-          <li>
-            <i class="fal fa-clock"></i>
-            <p>Monday to Sunday:9:00am to 9:00pm</p>
-          </li>
-        </div>
-      </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.82661045251774!2d83.18977064083658!3d17.876261395861132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a396143656c6127%3A0x5a287cb3501f37fc!2sGift%20shopee!5e0!3m2!1sen!2sin!4v1679326733770!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td class="cart-price">Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="cart-content">
+                    <td class="cart-box"><i class="far fa-times-circle hover:text-[#088178] cart-remove"></i></td>
+                    <td><img src="img/Products/f1.jpg" alt=""></td>
+                    <td>Infinity Photo Frame</td>
+                    <td>₹500</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₹500</td>
+                </tr>
+                <tr>
+                  <td class="cart-box"><i class="far fa-times-circle hover:text-[#088178] cart-remove"></i></td>
+                  <td><img src="img/Products/f2.jpg" alt=""></td>
+                  <td>Heart Photo Frame</td>
+                  <td>₹500</td>
+                  <td><input type="number" value="1"></td>
+                  <td>₹500</td>
+              </tr>
+              <tr>
+                <td class="cart-box"><i class="far fa-times-circle hover:text-[#088178] cart-remove" ></i></td>
+                <td><img src="img/Products/f3.jpg" alt=""></td>
+                <td>Purse</td>
+                <td>₹500</td>
+                <td><input type="number" value="1"></td>
+                <td>₹500</td>
+            </tr>
+            </tbody>
+        </table>
     </section>
-    <section id="form-details">
-      <form action="">
-        <span>Leave a Message</span>
-        <h2>We Love to Hear from You</h2>
-        <input type="text" placeholder="Your Name">
-        <input type="text" placeholder="E-mail">
-        <input type="text" placeholder="Subject">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <button class="normal">Submit</button>
-      </form>
-      <div class="people">
+    <section id="cart-add" class="section-p1">
+      <div id="coupon">
+        <h3>Apply Coupon</h3>
         <div>
-          <img src="img/people/p1.png" alt="">
-          <p><span>Praveen Adari</span>Chief Technology Officer <br> Phone: +91 9010962116 <br>Email:adaripraveen.23@gmail.com</p>
-        </div>
-        <div>
-          <img src="img/people/p2.png" alt="">
-          <p><span>Pravi</span>Marketing Manager <br> Phone: +91 9010962116 <br>Email:adaripravi.23@gmail.com</p>
-        </div>
-        <div>
-          <img src="img/people/p1.png" alt="">
-          <p><span>Venkatesh Adari</span>Chief Executive Officer <br> Phone: +91 9966737466 <br>Email:Giftshoppe711@gmail.com</p>
+          <input type="text" placeholder="Enter Your Coupon">
+          <button class="normal">Apply</button>
         </div>
       </div>
-    </section>
-    <section id="newsletter" class="section-p1 section-m1">
-      <div class="newstext">
-        <h4>Sign Up for Newsletters</h4>
-        <p>
-          Get E-mail updates about our latest shop and
-          <span>Special Offers.</span>
-        </p>
-      </div>
-      <div class="form">
-        <input type="text" placeholder="Your Email Address" />
-        <button class="normal">Sign Up</button>
+      <div id="subtotal">
+        <h3>Cart Totals</h3>
+        <table>
+          <tr>
+            <td>Cart Subtotal</td>
+            <td>₹1500</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td class="total-title"><strong>Total</strong></td>
+            <td class="total-price"><strong>₹1500</strong></td>
+          </tr>
+        </table>
+        <button class="normal">Proceed to Checkout</button>
       </div>
     </section>
     <footer class="section-p1">
@@ -232,9 +233,9 @@
         <img src="img/pay/pay.png" alt="" />
       </div>
       <div class="Copyright">
-        <p>©2023, Gift Shoppe</p>
+        <p>©2024, Gift Shoppe</p>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="/public/js/form.js"></script>
   </body>
 </html>

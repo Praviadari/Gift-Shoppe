@@ -296,6 +296,13 @@ header li > a{
     justify-content: space-between;
     padding-top: 20px;
     flex-wrap: wrap;
+    
+}
+#product1 .pro-container img {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
 }
 #product1 .pro {
     width: 23%;
@@ -309,7 +316,7 @@ header li > a{
     position: relative;
 }
 #product1 .pro:hover {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 20px 20px 30px rgba(70, 62, 221, 0.1);
 }
 #product1 .pro img {
     width: 100%;
@@ -350,11 +357,14 @@ header li > a{
     border-radius: 50px;
     background-color: #e8f6ea;
     font-weight: 500;
-    color: #088178;
+    color: #000000;
     border: 1px solid #cce7d0;
     position: absolute;
     bottom: 20px;
     right: 10px;
+}
+#product1 .pro .cart:hover{
+    background-color: #7cdbd5;
 }
 #banner {
     display: flex;
@@ -511,7 +521,7 @@ header li > a{
 #newsletter p span {
     color: #ffbd27;
 }
-#newsletter .form {
+#newsletter .newsform {
     display: flex;
     width: 40%;
 }
@@ -525,7 +535,8 @@ header li > a{
     outline: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    color: white;
+    color: rgb(0, 0, 0);
+    opacity: 1;
 }
 #newsletter button {
     background-color: #088178;
@@ -1246,6 +1257,9 @@ font-size: 18px;
         width: 100%;
         padding: 20px;
     }
+    #cart .active{
+        right: 0;
+    }
 }
 @media (max-width: 361px){
     #feature {
@@ -1253,6 +1267,7 @@ font-size: 18px;
         justify-content: center;
     }
 }
+
 #login-form,
 #register-form{
     display: flex;
@@ -1309,7 +1324,7 @@ font-size: 18px;
 
 .form input:focus,
 .submit-btn:hover{
-    background: #b8f0ec;
+    background: #e3e6f3;
     color: #000;
 }
 #newsletter .form1{
@@ -1317,7 +1332,7 @@ font-size: 18px;
     width: 40%;
 }
 input:focus::placeholder{
-    color: #f8f1f1;
+    color: #807e7e;
 }
 
 .submit-btn{

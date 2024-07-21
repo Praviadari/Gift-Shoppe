@@ -1,3 +1,3 @@
-# Gift-Shoppe
+# Backend Login Form
 
-https://praviadari.github.io/Gift-Shoppe.github.io/
+Once you clone it make sure you run 'npm install' command to install all libraries mention in package.json file.
